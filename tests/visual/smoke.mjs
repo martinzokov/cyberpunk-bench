@@ -1,28 +1,9 @@
 import fs from "node:fs/promises";
 import { chromium } from "playwright";
 
-const targetUrl = process.env.FOUR_ELEMENTS_URL ?? "http://localhost:4173/";
-const models = [
-  "opus-5",
-  "kimi-k3",
-  "grok-4.5",
-  "fable-5",
-  "sol-ultra",
-  "terra-ultra",
-  "luna-extra-high",
-  "gpt-5.5",
-  "sonnet-5",
-  "grok-4.6",
-  "glm-5.2",
-  "gemini-3.7-flash",
-  "fable-5.1",
-  "gemini-3.8-flash",
-  "gpt-6-astra",
-  "grok-4.7",
-  "gpt-6-sol",
-  "gpt-6-luna",
-  "opus-5.5",
-];
+const targetUrl = process.env.CYBERPUNK_BENCH_URL ?? "http://localhost:4173/";
+// Add each model's id here as its app lands in apps/.
+const models = [];
 const viewports = [
   { name: "desktop", width: 1440, height: 960 },
   { name: "mobile", width: 390, height: 844 },

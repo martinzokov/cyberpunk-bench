@@ -7,35 +7,36 @@
     "typescript": "^5.8.3",
     "ultracite": "7.6.2"
   },
-  "name": "4elements",
+  "name": "cyberpunk-bench",
   "scripts": {
-    "dev": "pnpm --filter @4elements/playground dev",
-    "build": "pnpm --filter @4elements/playground build",
-    "build:models": "pnpm --filter @4elements/playground build:models",
-    "preview": "pnpm --filter @4elements/playground preview",
+    "dev": "pnpm --filter @cyberpunk-bench/playground dev",
+    "build": "pnpm --filter @cyberpunk-bench/playground build",
+    "build:models": "pnpm --filter @cyberpunk-bench/playground build:models",
+    "preview": "pnpm --filter @cyberpunk-bench/playground preview",
     "test:visual": "node tests/visual/smoke.mjs",
-    "typecheck": "pnpm --filter @4elements/playground typecheck",
+    "typecheck": "pnpm --filter @cyberpunk-bench/playground typecheck",
     "check": "ultracite check",
     "fix": "ultracite fix"
   },
   "version": "0.1.0",
   "private": true,
-  "description": "Local-first benchmark for AI-generated interactive 3D elemental scenes.",
+  "description": "Benchmark for AI-generated interactive 3D cyberpunk scenes.",
   "keywords": [
     "3d",
     "ai",
     "benchmark",
+    "cyberpunk",
     "threejs",
     "webgl",
     "vite"
   ],
-  "homepage": "https://github.com/TheOrcDev/4elements#readme",
+  "homepage": "https://github.com/martinzokov/cyberpunk-bench#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/TheOrcDev/4elements.git"
+    "url": "git+https://github.com/martinzokov/cyberpunk-bench.git"
   },
   "bugs": {
-    "url": "https://github.com/TheOrcDev/4elements/issues"
+    "url": "https://github.com/martinzokov/cyberpunk-bench/issues"
   },
   "license": "MIT",
   "packageManager": "pnpm@10.33.0"

@@ -1,3 +1,20 @@
+# Cyberpunk Bench
+
+This repo benchmarks AI models by having each one build a single interactive 3D cyberpunk scene from the same brief, [`PROMPT.md`](PROMPT.md). Each scene is a self-contained Vite app in `apps/<model-id>/`, and `apps/playground` is the shell that switches between them.
+
+## Submitting a model's scene
+
+Follow "Adding a model" in [`CONTRIBUTING.md`](CONTRIBUTING.md) step by step. The rules that matter most:
+
+- **Exclude `apps/<model-id>` in `biome.jsonc` before writing any file there.** A hook runs `pnpm fix` after every write, and it will reformat a model's code that is not yet excluded.
+- **Build the scene from `PROMPT.md` alone.** Do not read or borrow from other models' apps in `apps/`.
+- **Keep the scene's code as the model wrote it.** Wiring it in may only set the package name and the `base` / `outDir` in its `vite.config`.
+- **Touch only your own app plus the wiring**: `biome.jsonc`, `pnpm-lock.yaml`, `modelOptions` in `apps/playground/src/main.tsx`, `models` in `tests/visual/smoke.mjs`, and your row and paragraph in `README.md`.
+- **Record honest numbers.** `duration` is wall-clock from receiving the brief to a working app, and `effort` is the reasoning setting the model actually ran at.
+- **Finish with `pnpm check`, `pnpm typecheck` and `pnpm build` passing.**
+
+The standards below apply to the playground only. Model apps are exempt.
+
 # Ultracite Code Standards
 
 This project uses **Ultracite**, a zero-config preset that enforces strict code quality standards through automated formatting and linting.
