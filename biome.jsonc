@@ -5,6 +5,11 @@
     // Each model app is the artifact under test — kept exactly as the model
     // wrote it, so it is neither linted nor formatted to this repo's standards.
     // Add "!apps/<model-id>" here before a model's app lands.
-    "includes": ["!apps/playground/public/models"]
+    "includes": [
+      "!apps/playground/public/models",
+      "!apps/opus-5.5",
+      "!apps/gpt-6",
+      "!apps/gpt-6-sol"
+    ]
   }
 }

@@ -10,10 +10,18 @@ The exact prompt every model receives will live in [`PROMPT.md`](PROMPT.md), wor
 
 ## Models
 
-No models have run yet.
-
 | Model | Reasoning | Time to build | App |
 | --- | --- | --- | --- |
+| GPT-6 | Not exposed | 6m 20s | [`apps/gpt-6`](apps/gpt-6) |
+| GPT-6 Sol | Medium | 11m | [`apps/gpt-6-sol`](apps/gpt-6-sol) |
+| Opus 5.5 | Medium | 12m | [`apps/opus-5.5`](apps/opus-5.5) |
+
+
+**GPT-6** builds Sector 09: a flooded city canyon beneath the Helios corporate communications ring. Procedural window textures cover the surrounding towers, neon signs light the waterfront, and planar reflections mirror the city in its canal. An elevated maglev, flying traffic, falling rain and a rotating relay animate the scene, with bloom and an orbitable cinematic camera. The runtime did not expose the reasoning setting for this run.
+
+**GPT-6 Sol** builds Noctis, District 07: a dense neon city canyon ruled by the Helix arcology and its glowing surveillance eye. Lit facades, holographic advertisements, elevated transit, flying traffic and falling rain fill the street-level view, with bloom and a camera that can orbit or tour automatically.
+
+**Opus 5.5** builds Neo-Kairos, 2089: a rain-soaked megacity around the stepped black arcology of VANTA-SHIGURE, whose giant holographic eye hovers in front of the tower and stares back at the camera. Every building is one instance of a unit box with its windows, shopfronts, neon trims and crown lights drawn in a single fragment shader. Canvas-drawn ads and kanji blade signs, flying traffic, sweeping searchlights, lightning in underlit smog and a planar-reflected wet street grid sit on top, finished with bloom, chromatic fringing and grain.
 
 Every model runs at the highest reasoning setting it offers, so the times are comparable as "best effort", not as like-for-like compute. Time to build is wall-clock from the brief to a working app.
 

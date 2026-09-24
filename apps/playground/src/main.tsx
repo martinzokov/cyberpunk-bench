@@ -45,7 +45,45 @@ interface ModelOption {
 }
 
 // One entry per model app in apps/. See CONTRIBUTING.md for the fields.
-const modelOptions: readonly ModelOption[] = [];
+const modelOptions: readonly ModelOption[] = [
+  {
+    label: "Opus 5.5",
+    value: "opus-5.5",
+    provider: "anthropic",
+    effort: "Medium",
+    effortDetail: "Thinking effort: medium",
+    duration: "12m",
+    summary:
+      "A rain-soaked megacity under a stepped black corporate arcology, watched by a giant holographic eye, with thousands of procedurally shaded towers, neon signage, flying traffic, searchlights and a wet reflective street grid.",
+    controls:
+      "Drag to orbit, scroll to zoom, right-drag to pan, C for a cinematic flight, R toggles rain, H hides the HUD.",
+  },
+  {
+    label: "GPT-6",
+    value: "gpt-6",
+    provider: "openai",
+    effort: "Not exposed",
+    effortDetail:
+      "The runtime did not expose the reasoning setting for this submission.",
+    duration: "6m 20s",
+    summary:
+      "Sector 09: a flooded city canyon beneath a corporate communications ring, with reflected neon towers, an elevated maglev, flying traffic and rain.",
+    controls:
+      "Drag to orbit, scroll to zoom, right-drag to pan; buttons pause the flight, toggle rain and reset the view.",
+  },
+  {
+    label: "GPT-6 Sol",
+    value: "gpt-6-sol",
+    provider: "openai",
+    effort: "Medium",
+    effortDetail: "Reasoning effort: medium",
+    duration: "11m",
+    summary:
+      "Noctis: a neon city canyon controlled by the Helix arcology, with lit towers, holographic advertisements, elevated transit, flying traffic, rain and an orbitable cinematic camera.",
+    controls:
+      "Drag to orbit, scroll to zoom, right-drag to pan; buttons toggle the auto tour and rain or reset the view.",
+  },
+];
 
 const defaultModel: ModelName = modelOptions[0]?.value ?? "";
 

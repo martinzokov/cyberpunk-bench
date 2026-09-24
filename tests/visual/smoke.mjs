@@ -3,7 +3,7 @@ import { chromium } from "playwright";
 
 const targetUrl = process.env.CYBERPUNK_BENCH_URL ?? "http://localhost:4173/";
 // Add each model's id here as its app lands in apps/.
-const models = [];
+const models = ["opus-5.5", "gpt-6", "gpt-6-sol"];
 const viewports = [
   { name: "desktop", width: 1440, height: 960 },
   { name: "mobile", width: 390, height: 844 },

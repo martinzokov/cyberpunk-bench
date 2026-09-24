@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEO-KAIROS // 2089</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+
+    <div id="hud">
+      <header class="hud-title">
+        <div class="kicker">SECTOR 7 // LOWER KAIROS // 03:47 LOCAL</div>
+        <h1>NEO-KAIROS<span>2089</span></h1>
+        <div class="sub">Property of <b>VANTA-SHIGURE</b> Holdings. All citizens are assets.</div>
+      </header>
+
+      <aside class="hud-status">
+        <div class="row"><span>SURVEILLANCE</span><b class="red blink">ACTIVE</b></div>
+        <div class="row"><span>AIR QUALITY</span><b class="amber">HAZARDOUS</b></div>
+        <div class="row"><span>ACID RAIN</span><b id="rain-pct">87%</b></div>
+        <div class="row"><span>CITIZEN SCORE</span><b id="score">412</b></div>
+        <div class="row"><span>CAM</span><b id="cam-mode">ORBIT</b></div>
+      </aside>
+
+      <div class="hud-help">
+        DRAG orbit · SCROLL zoom · RIGHT-DRAG pan · <b>C</b> cinematic flight · <b>R</b> rain · <b>H</b> hide HUD
+      </div>
+
+      <footer class="ticker">
+        <div class="ticker-track" id="ticker"></div>
+      </footer>
+    </div>
+
+    <div id="scanlines"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

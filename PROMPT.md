@@ -1,0 +1,1 @@
+Create a three JS cyberpunk scene. We want to capture the essence of the cybepunk genre - metropolitan city, large corporations, technology, neon colors. It needs to evoke a sense of darkness, corruption and awe all at the same time. The whole scene needs to look really good in 3D model inside of the browser. Use vite.
